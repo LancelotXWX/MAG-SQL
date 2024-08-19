@@ -43,7 +43,7 @@ We provide the script for Linux systems.
 
 ## 🎈 Useful Resources
 
-Our project is built based on: [[Repo]](https://github.com/wbbeyourself/MAC-SQL)
+Our project is built based on MAC-SQL: [[Repo]](https://github.com/wbbeyourself/MAC-SQL)
 
 ## 📰 Citation 
 If you find our work is helpful, please cite as:
