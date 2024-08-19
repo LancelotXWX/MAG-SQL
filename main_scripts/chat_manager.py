@@ -7,7 +7,6 @@ LLM_API_FUC = None
 try:
     from main_scripts import llm
     LLM_API_FUC = llm.safe_call_llm
-    LLM_API_FUC_MA = llm.safe_call_llm_multiple_reply
     INIT_LOG__PATH_FUNC = llm.init_log_path
     print(f"Use func from main_scripts.llm in chat_manager.py")
 except:
