@@ -60,23 +60,3 @@ class ChatManager(object):
         end_time = time.time()
         exec_time = end_time - start_time
         print(f"\033[0;34mExecute {exec_time} seconds\033[0m", flush=True)
-
-
-if __name__ == "__main__":
-    test_manager = ChatManager(data_path="../data/spider/database",
-                               log_path="",
-                               model_name='gpt-35-turbo-instruct',
-                               dataset_name='spider',
-                               lazy=True)
-    msg = {
-        'db_id': 'concert_singer',
-        'query': 'How many singers do we have?',
-        'evidence': '',
-        'extracted_schema': {},
-        'ground_truth': 'SELECT count(*) FROM singer',
-        'difficulty': 'easy',
-        'send_to': SYSTEM_NAME
-    }
-    test_manager.start(msg)
-    print(msg)
-    print(msg['pred'])
