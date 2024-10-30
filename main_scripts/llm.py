@@ -11,7 +11,7 @@ API_Key = "API Key"
 Base_url = "The base url of your API"
 
 #MODEL_NAME = 'gpt-4'
-MODEL_NAME = 'gpt-3.5-turbo-16k'
+MODEL_NAME = 'gpt-3.5-turbo-1106'
 #MODEL_NAME = 'gpt-4-0125-preview'
 MAX_TRY = 5
 
