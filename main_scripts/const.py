@@ -24,6 +24,7 @@ As an experienced and professional database administrator, your task is to analy
 3. Make sure each chosen list is not empty. The value [] will be punished. 
 4.【Matched values】 may contain redundant or useless information in addition to the correct matching values, so you need to select the useful information in conjunction with the specific column names and descriptions.
 5. An entity may not have a corresponding evidence, which requires you to find the relevant columns yourself through your understanding of the database schema.
+6. There are columns with similar names but different meanings, you can find the most accurate columns in the right table based on the 【Summary of each table】.
 
 Here is a typical example:
 
@@ -83,6 +84,11 @@ Later birthdate refers to younger age; A11 refers to average salary; Full name r
 【Matched values】
 Since some of the specific values in Question and evidence match the data in the database, here are some matches retrieved from the database that may help you in selecting columns (You need to ignore matches that are not relevant to the question):
 No matched values.
+【Summary of each table】
+# account: Specific information for each account
+# client: Basic information about each client
+# loan: Detailed records of each loan
+# district: Various data recorded in each district
 【Answer】
 The entities extracted from the 【Question】 are: 
 1. gender; 
@@ -131,6 +137,8 @@ Here is a new example, please start answering:
 【Matched values】
 Since some of the specific values in Question and evidence match the data in the database, here are some matches retrieved from the database that may help you in selecting columns (You need to ignore matches that are not relevant to the question):
 {matched_list}
+【Summary of each table】
+{summary_str}
 【Answer】
 """
 
